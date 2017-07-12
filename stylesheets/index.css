@@ -1,0 +1,112 @@
+/* 重置样式 */
+*{
+	margin:0;
+	padding:0;
+}
+h2{
+	text-align: center;
+	margin:150px;
+}
+body{
+	background: #000000;
+}
+
+/*设置每个面所在的空间位置*/
+.first{
+	-webkit-transform:translateZ(75px);	
+}
+.second{
+	-webkit-transform:rotateX(-90deg) translateZ(75px);
+	
+}
+.thrid{	
+	-webkit-transform:rotateX(90deg) translateZ(75px);
+	
+}
+.fourth{
+	-webkit-transform:rotateX(180deg) translateZ(75px);
+}
+.fifth{
+	-webkit-transform:rotateY(-90deg) translateZ(75px);
+}
+.sixth{
+	-webkit-transform:rotateY(90deg) translateZ(75px);
+}
+
+/*设置每个面的颜色*/
+.first div{
+	background-color: #ffffff;
+}
+.second div{
+	background-color:#EE7621;
+}
+.thrid div{
+	background-color:#ff0000;
+}
+.fourth div{
+	background-color: #ffff00;
+}
+.fifth div{
+	background-color: #0000ff;
+}
+.sixth div{
+	background-color: #00ff00;
+}
+
+/*设置每个面通用的样式*/
+#box>div{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	background: #000000;
+}
+/*设置每个面中小块的样式*/
+#box>div>div{
+	float: left;
+	width: 48px;
+	height: 48px;
+	border:1px solid #000000;
+	border-radius: 5px;
+}
+/*设置动画*/
+#box{
+	background: #000000;
+	width: 150px;
+	height: 150px;
+	font-size: 130px;
+	text-align: center;
+	margin: 80px auto 0 auto;
+	animation-name:myanimation;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:1;
+	animation-duration:5s;
+	transform-style:preserve-3d;
+	transform-origin:75px 75px 0;
+	-webkit-animation-name:myanimation;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-duration:7s;	
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin:75px 75px 0;
+	-webkit-transform:rotateZ(45deg) rotateX(-45deg) rotateY(45deg) ;
+}
+@keyframes myanimation{
+	    0%{transform:rotateX(90deg)}
+	    15%{transform:rotateY(-180deg)}
+	    30%{transform:rotateZ(90deg)}
+	    45%{transform:rotateX(90deg)}
+	    60%{transform:rotateY(-180deg)}
+	    75%{transform:rotateX(-90deg)}
+	    90%{transform:rotateZ(45deg) rotateX(-45deg) rotateY(45deg) }
+	}
+@-webkit-keyframes myanimation{
+	     0%{-webkit-transform:rotateX(90deg)}
+	    15%{-webkit-transform:rotateY(-180deg)}
+	    30%{-webkit-transform:rotateZ(90deg)}
+	    45%{-webkit-transform:rotateX(90deg)}
+	    60%{-webkit-transform:rotateY(-180deg)}
+	    75%{-webkit-transform:rotateX(-90deg)}
+	    90%{-webkit-transform:rotateZ(45deg) rotateX(-45deg) rotateY(45deg) }
+	}
+
+
