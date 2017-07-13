@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js计算器-张忠</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../images/z.ico">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <!–[if IE]>
+    <script src="../js/html5.js"></script>
+    <![endif]–>
+    
+</head>
+
+<body class="home page page-id-2 page-template-default">
+    <div id="page" class="hfeed site">
+        <a class="skip-link screen-reader-text" href="#content">跳至内容</a>
+        <div id="sidebar" class="sidebar">
+            <header id="masthead" class="site-header" role="banner">
+                <div class="site-branding">
+                    <p class="site-title">张 忠</p>
+                    <p class="site-description">前端工程师、吉他爱好者</p>
+                    <button class="secondary-toggle">菜单和挂件</button>
+                </div>
+            </header>
+            <div id="secondary" class="secondary">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <div class="menu-%e7%8e%8b%e5%9d%9a-container">
+                        <ul id="menu-%e7%8e%8b%e5%9d%9a" class="nav-menu">
+                            <li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22">
+                                <a href="../index.html">主页<div class="menu-item-description ">Home</div></a></li>
+                            <li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22">
+                                <a href="../About.html">个人简介<div class="menu-item-description ">About</div></a></li>
+                            <li id="menu-item-28 " class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28 "><a href="../Works.html">作品展示<div class="menu-item-description ">Works</div></a></li>
+                            
+                            <li id="menu-item-27 " class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27 "><a href="../Contact.html">联系方式<div class="menu-item-description ">Contact</div></a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="content " class="site-content ">
+            <header id="page-header" class="page-header">
+                <h1 class="page-title">分类：作品展示</h1>
+                <div class="taxonomy-description">
+                    <p>Works</p>
+                </div>          
+            </header>
+                        
+            <article id="post-81" class="post-81 post type-post status-publish format-aside hentry category-work post_format-post-format-aside">    
+                <div class="container">
+                    <!-- 输出结果 -->
+                    <input name="text" type="text" id="result" value="0" readonly="true" />
+                    <!-- 算式提示 -->
+                    <div id="prompt">算式提示：<span id="jsqPrompt"></span></div>
+                    <!-- 清零按钮 -->
+                    <button class="btn" id="clear" onclick="clearAll() ">AC</button>
+                    <!-- sin cos tan 取倒数 -->
+                    <button class="btn complex" value="sin">sin</button>
+                    <button class="btn complex" value="cos" >cos</button>
+                    <button class="btn complex" value="tan" >tan</button>
+                    <button class="btn complex" value="re">1/x</button>
+                    <!-- 数字7 8 9 除法 取相反数 -->
+                    <button class="btn num" value="7")">7</button>
+                    <button class="btn num" value="8")">8</button>
+                    <button class="btn num" value="9")">9</button>
+                    <button class="btn simple" value="÷">÷</button>
+                    <button class="btn complex" value="ne">±</button>
+                    <!-- 数字4 5 6 乘法 开根号 -->
+                    <button class="btn num" value="4">4</button>
+                    <button class="btn num" value="5">5</button>
+                    <button class="btn num" value="6">6</button>
+                    <button class="btn simple" value="×"">×</button>
+                    <button class="btn complex" value="sq">√</button>
+                    <!-- 数字1 2 3 减法 -->
+                    <button class="btn num" value="1">1</button>
+                    <button class="btn num" value="2">2</button>
+                    <button class="btn num" value="3">3</button>
+                    <button class="btn simple" value="-">-</button>
+                    <!-- 数字0  小数点 加法 等于符号 -->
+                    <button class="btn num" id="num_0" value="0" ">0</button>
+                    <button class="btn" id="decimal">·</button>
+                    <button class="btn simple" value="+" id="addition">+</button>
+                    <button class="btn simple" id="calculate" value="=">=</button>
+                </div>
+                <br>
+                <div class="zs">
+                    <span>注：</span><span id="zs"></span><span>为一元操作符，仅对输出框内的数字进行操作</span>
+                </div>
+                <br>
+                <br>
+
+            </article>            
+        </div>
+        <footer id="colophon " class="site-footer " role="contentinfo ">
+            <div class="site-info ">
+                Jone Zhang © 2017. All rights reserved
+            </div>
+        </footer>
+    
+    
+    <script type="text/javascript" src="js/calculator.js"></script>
+</body>
+
+</html>
