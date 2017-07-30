@@ -53,7 +53,7 @@ jQuery(document).ready(function( $ ) {
         itemsTabletSmall: false,
         itemsMobile : [479,1],
     });
-         $('#menu').on("touchend",(function(){
+          $('#menu').on("click",(function(){
         $('#menu').not(this).removeClass("active");
         $(this).toggleClass("active");
         console.log($('body').width());
