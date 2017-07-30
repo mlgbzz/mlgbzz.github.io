@@ -53,11 +53,11 @@ jQuery(document).ready(function( $ ) {
         itemsTabletSmall: false,
         itemsMobile : [479,1],
     });
-       $('#menu').click(function(){
-       $('#menu').not(this).removeClass("active");
-       $(this).toggleClass("active");
-      });
-
+         $('#menu').on("touchend",(function(){
+        $('#menu').not(this).removeClass("active");
+        $(this).toggleClass("active");
+        console.log($('body').width());
+      }));
   });
 
   
