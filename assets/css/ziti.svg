@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sun Jul 30 03:56:39 2017
+ By www-data
+</metadata>
+<defs>
+<font id="NOTDEF" horiz-adv-x="1000" vert-adv-y="1000" >
+  <font-face 
+    font-family="(null)"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    x-height="472"
+    cap-height="686"
+    bbox="50 -86 2775 791"
+    underline-thickness="50"
+    underline-position="-100"
+    stemh="17"
+    stemv="110"
+    unicode-range="U+E000-E000"
+  />
+    <missing-glyph />
+    <glyph glyph-name=".notdef" 
+d="M187 -6v718l279 -359zM773 -42h-558l279 359zM801 -6l-279 359l279 359v-718zM773 748l-279 -359l-279 359h558zM143 791v-877h702v877h-702z" />
+    <glyph glyph-name="GB1.40000" unicode="&#xe000;" horiz-adv-x="2825" 
+d="M2500 701v54h-173v-54h57v-152h59v152h57zM2653 635l-45 120h-78v-206h55v135h1l45 -135h44l44 135h1v-135h55v206h-78zM1747 755v-78h530v78h-530zM580 75h-418v327h-112v-407h530v80zM457 230h-135v87h135v-87zM562 402h-345v-262h345v262zM162 710h-112v-80h112v80z
+M977 525h-352v-73h242v-127h-247v-90h230l-110 -240h120l112 240h175v90h-170v200zM210 755v-125h127v-73h-127v-90h360v90h-128v73h128v80h-128v45h-105v-45h-40v45h-87zM2005 365h-145v62h145v-62zM162 557h-112v-80h112v80zM2172 557l-7 -55h-305v55h312zM2267 630h-502
+v-313l-33 -322h98l30 290h72l-22 -290h95l7 145h170v-145h85v225h-247l10 65h237v80h-167v62h167v203zM1187 85v-90h520v90h-207v552h200v78h-505v-78h200v-552h-208zM1037 587h110v128h-200v50h-120v-50h-207v-128h110v50h307v-50z" />
+  </font>
+</defs></svg>
