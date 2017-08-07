@@ -3,7 +3,7 @@
 include_once "wxBizMsgCrypt.php";
 
 // 第三方发送消息给公众平台
-$encodingAesKey = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFG";
+$encodingAesKey = "959a1814a5ff8bf8a62a6aa0beef97bd";
 $token = "pamtest";
 $timeStamp = "1409304348";
 $nonce = "xxxxxx";
